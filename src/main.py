@@ -38,7 +38,7 @@ class App:
 
     def __read_data(self, filename):
         getter = _operator.itemgetter(
-            'assayEndpointName', 'CASRN', 'ChemicalName', 'modlGa')
+            'assayEndpointName', 'CASRN', 'ChemicalName', 'modlTp')
 
         with open(filename, newline='') as file:
             reader = _csv.DictReader(file)
